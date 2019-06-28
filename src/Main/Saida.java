@@ -5,12 +5,16 @@ import java.text.DecimalFormat;
 
 class Saida {
 
-    public void imprimirNumeroDouble(String mensagem, double num) {
-        DecimalFormat df = new DecimalFormat("###,##0.00");
-        System.out.println(mensagem + "=>" + df.format(num));
-    }
+   //public void imprimirString(String msg) {
+        
+     //   DecimalFormat df = new DecimalFormat("###,##0.00");
+       // System.out.println(msg + " => " + df.format(num));
+    //}
 
     public void imprimirAvisoString(String aviso) {
         System.out.println(aviso);
+    }
+    public void imprimirInt(String msg, int cont){
+        System.out.println(msg + " " + cont);
     }
 }

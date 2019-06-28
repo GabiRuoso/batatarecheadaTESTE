@@ -7,15 +7,17 @@ public class Main {
 
     public static void main(String[] args) {
         Entrada entrada = new Entrada();
-        double a = entrada.lerNumeroDouble("Digite um valor para A");
-        double b = entrada.lerNumeroDouble("Digite um valor para B");
-
         Processamento processamento = new Processamento();
-        Double soma = processamento.getSoma(a, b);
-
         Saida saida = new Saida();
-        saida.imprimirNumeroDouble("Resultado da soma", soma);
-
+        
+        String frase = entrada.lerString("Coloque uma frase");
+        System.out.println(frase);
+        int espacos = processamento.criar_vet(frase);
+        
+        saida.imprimirInt("Número de espaços da frase:", espacos);
+        
+        
+        
     }
 
 }
